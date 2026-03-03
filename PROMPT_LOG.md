@@ -3,83 +3,139 @@ DeepSafe Her
 This log explains how AI tools assisted our development process and what changes we manually implemented as a team.
 
 Phase 1 – UI Layout & Dark Mode
+
 Tool Used: ChatGPT
 
 What We Asked:
-We asked for help generating a responsive HTML/CSS layout for a deepfake detection website with a dark mode toggle and a clean sidebar design.
+
+Generate a responsive HTML/CSS layout
+
+Include a dark mode toggle
+
+Create a clean sidebar design
 
 What We Changed:
-Adjusted the color scheme to match our DeepSafe Her branding
-Modified spacing and font sizes for better readability
+
+Adjusted the color scheme to match DeepSafe Her branding
+
+Modified spacing and font sizes for readability
+
 Made the sidebar responsive for smaller screens
+
 Improved contrast for buttons and text
 
 Why We Modified It:
-The initial layout was functional but generic. We customized it to better reflect a security-focused theme and improve user experience.
+
+The initial layout was functional but generic
+
+Customized it to reflect a security-focused theme
+
+Improved overall user experience
 
 Phase 2 – Firebase Integration (Evidence Vault)
+
 Tool Used: ChatGPT
 
 What We Asked:
-We requested a JavaScript function to store Case ID, Risk Level, and Timestamp in Firebase Firestore.
+
+JavaScript function to store:
+
+Case ID
+
+Risk Level
+
+Timestamp
+
+Store data in Firebase Firestore
 
 What We Changed:
-Integrated the function into our Evidence Vault structure
-Created a structured Case ID format (e.g., DS12345)
+
+Integrated into Evidence Vault structure
+
+Created structured Case ID format (e.g., DS12345)
+
 Added error handling for failed uploads
-Used Firebase’s server timestamp for accuracy
+
+Used Firebase server timestamp for accuracy
 
 Why We Modified It:
-We wanted to ensure the stored reports looked structured and realistic, similar to formal digital documentation.
+
+Ensured structured and realistic documentation
+
+Matched formal digital reporting standards
 
 Phase 3 – Authentication Logic
+
 Tool Used: Microsoft Copilot
 
 What We Asked:
-We requested a Firebase email/password login implementation.
+
+Firebase email/password login implementation
 
 What We Changed:
-Added redirect logic to send users to their personal dashboard after login
+
+Added redirect to personal dashboard after login
+
 Improved error messages
-Ensured user sessions persist properly
+
+Ensured session persistence
 
 Why We Modified It:
-We needed users to securely access only their own case history.
+
+Required secure access to individual case history
 
 Phase 4 – Case History Display
+
 Tool Used: GitHub Copilot
 
 What We Asked:
-We asked how to retrieve and display a user’s previous detection history from Firestore.
+
+Retrieve and display user detection history from Firestore
 
 What We Changed:
-Added fields from our custom risk scoring logic
+
+Added custom risk scoring fields
+
 Included color-coded risk labels
-Improved the layout for clarity
+
+Improved layout clarity
 
 Why We Modified It:
-We wanted users to clearly understand their previous results without confusion.
+
+Helped users clearly understand previous results
 
 Phase 5 – Background & Visual Polish
+
 Tool Used: ChatGPT
 
 What We Asked:
-We requested a CSS snippet for a subtle, tech-themed gradient background.
+
+CSS snippet for a subtle tech-themed gradient background
 
 What We Changed:
-Applied the gradient selectively instead of full-screen
-Adjusted brightness for better readability
-Matched the color palette to our branding
+
+Applied gradient selectively instead of full-screen
+
+Adjusted brightness for readability
+
+Matched color palette to branding
 
 Why We Modified It:
-We aimed to maintain a professional and security-oriented aesthetic without overwhelming the interface.
 
-Overall AI Usage:
+Maintained professional, security-oriented aesthetic
 
-AI tools were used to assist with:
+Avoided overwhelming the interface
+
+Overall AI Usage
+
+AI tools assisted with:
+
 Code structuring
+
 UI layout suggestions
+
 Firebase setup guidance
+
 Styling enhancements
 
-All final implementation decisions, refinements, and integration were performed manually by our team.
+All final implementation decisions, refinements, and integrations were completed manually by the team.
