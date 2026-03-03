@@ -1,141 +1,148 @@
-DeepSafe Her
-
-This log explains how AI tools assisted our development process and what changes we manually implemented as a team.
-
-Phase 1 – UI Layout & Dark Mode
+DeepSafe Her AI Prompt Log
+Phase 1: UI Layout and Dark Mode
 
 Tool Used: ChatGPT
 
-What We Asked:
+Prompt Used:
+"Generate a responsive HTML and CSS layout for a deepfake detection website. Include a dark mode toggle and a clean sidebar navigation layout."
 
-Generate a responsive HTML/CSS layout
+AI Response Summary:
+Provided a base HTML structure with a sidebar, content area, and dark mode toggle using CSS variables.
 
-Include a dark mode toggle
+Modifications Made by Team:
 
-Create a clean sidebar design
+Adjusted colors to match DeepSafe Her branding
 
-What We Changed:
-
-Adjusted the color scheme to match DeepSafe Her branding
-
-Modified spacing and font sizes for readability
+Modified spacing and font sizes
 
 Made the sidebar responsive for smaller screens
 
-Improved contrast for buttons and text
+Improved button and text contrast
 
-Why We Modified It:
+Reason for Modifications:
+The original layout was functional but generic. We refined it to reflect a professional, security focused interface and improve usability.
 
-The initial layout was functional but generic
-
-Customized it to reflect a security-focused theme
-
-Improved overall user experience
-
-Phase 2 – Firebase Integration (Evidence Vault)
+Phase 2: Firebase Integration Evidence Vault
 
 Tool Used: ChatGPT
 
-What We Asked:
+Prompt Used:
+"Write a JavaScript function that stores Case ID, Risk Level, and Timestamp in Firebase Firestore."
 
-JavaScript function to store:
+AI Response Summary:
+Generated a Firestore addDoc function for storing structured data.
 
-Case ID
+Modifications Made by Team:
 
-Risk Level
+Integrated the function into our Evidence Vault system
 
-Timestamp
+Created structured Case ID format such as DS12345
 
-Store data in Firebase Firestore
+Added error handling
 
-What We Changed:
+Used Firebase server timestamp
 
-Integrated into Evidence Vault structure
+Reason for Modifications:
+To ensure structured and realistic digital documentation and reliable data storage.
 
-Created structured Case ID format (e.g., DS12345)
-
-Added error handling for failed uploads
-
-Used Firebase server timestamp for accuracy
-
-Why We Modified It:
-
-Ensured structured and realistic documentation
-
-Matched formal digital reporting standards
-
-Phase 3 – Authentication Logic
+Phase 3: Authentication Logic
 
 Tool Used: Microsoft Copilot
 
-What We Asked:
+Prompt Used:
+"Implement Firebase email and password authentication in JavaScript."
 
-Firebase email/password login implementation
+AI Response Summary:
+Generated login and signup functions using Firebase Authentication.
 
-What We Changed:
+Modifications Made by Team:
 
-Added redirect to personal dashboard after login
+Added redirect to user dashboard after login
 
 Improved error messages
 
 Ensured session persistence
 
-Why We Modified It:
+Reason for Modifications:
+To ensure secure access and proper user specific case history access.
 
-Required secure access to individual case history
-
-Phase 4 – Case History Display
+Phase 4: Case History Display
 
 Tool Used: GitHub Copilot
 
-What We Asked:
+Prompt Used:
+"Retrieve and display a user's previous detection results from Firebase Firestore."
 
-Retrieve and display user detection history from Firestore
+AI Response Summary:
+Generated Firestore query logic and basic display structure.
 
-What We Changed:
+Modifications Made by Team:
 
 Added custom risk scoring fields
 
-Included color-coded risk labels
+Implemented color coded risk labels
 
-Improved layout clarity
+Improved user interface clarity
 
-Why We Modified It:
+Reason for Modifications:
+To make previous results easier to understand and visually structured.
 
-Helped users clearly understand previous results
-
-Phase 5 – Background & Visual Polish
+Phase 5: Background and Visual Styling
 
 Tool Used: ChatGPT
 
-What We Asked:
+Prompt Used:
+"Provide a CSS snippet for a subtle tech themed gradient background suitable for a cybersecurity website."
 
-CSS snippet for a subtle tech-themed gradient background
+AI Response Summary:
+Provided CSS gradient background styling.
 
-What We Changed:
+Modifications Made by Team:
 
-Applied gradient selectively instead of full-screen
+Applied the gradient selectively
 
 Adjusted brightness for readability
 
-Matched color palette to branding
+Matched the brand color palette
 
-Why We Modified It:
+Reason for Modifications:
+To maintain a professional and security oriented aesthetic without overwhelming the interface.
 
-Maintained professional, security-oriented aesthetic
+Phase 6: Prompt Log Editing and Refinement
 
-Avoided overwhelming the interface
+Tool Used: ChatGPT
 
-Overall AI Usage
+Prompt Used:
+"Improve the grammar, clarity, and formatting of this prompt log without changing its meaning."
 
-AI tools assisted with:
+AI Response Summary:
+Revised sentence structure, corrected grammar, improved readability, and formatted the document consistently.
 
-Code structuring
+Modifications Made by Team:
 
-UI layout suggestions
+Reviewed all changes
 
-Firebase setup guidance
+Ensured technical meaning remained accurate
+
+Approved final wording before submission
+
+Reason for AI Use:
+To enhance clarity and professionalism while maintaining full accuracy of the documented development process.
+
+Overall AI Usage Statement
+
+AI tools were used to assist with:
+
+Code structure suggestions
+
+User interface layout generation
+
+Firebase integration guidance
+
+Authentication logic setup
 
 Styling enhancements
 
-All final implementation decisions, refinements, and integrations were completed manually by the team.
+grammar correction
+
+All final integration, testing, debugging, refinements, and implementation decisions were completed manually by the DeepSafe Her development team.
